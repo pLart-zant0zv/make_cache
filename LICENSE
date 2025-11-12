@@ -1,102 +1,24 @@
-package com.make_cache;
+BSD 2-Clause License
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+Copyright (c) 2025, pLart-zant0zv
 
-@SpringBootApplication
-public class main {
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
 
-    public static void main(String[] args) {
-        SpringApplication.run(main.class, args);
-    }
-}
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
 
-@RestController
-class ApiController {
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
 
-    @GetMapping("/")
-    public String home() {
-        return "Welcome to make_cache API";
-    }
-
-    @GetMapping("/health")
-    public HealthResponse health() {
-        return new HealthResponse("OK", System.currentTimeMillis());
-    }
-}
-
-class HealthResponse {
-    private String status;
-    private long timestamp;
-
-    public HealthResponse(String status, long timestamp) {
-        this.status = status;
-        this.timestamp = timestamp;
-    }
-
-    // getters and setters
-    public String getStatus() { return status; }
-    public void setStatus(String status) { this.status = status; }
-    public long getTimestamp() { return timestamp; }
-    public void setTimestamp(long timestamp) { this.timestamp = timestamp; }
-}
-
-# Setup Update 1760688017
-
-# Setup Update 1760688017
-
-# Setup Update 1760688017
-
-# Setup Update 1760688017
-
-# Setup Update 1760688018
-
-# Setup Update 1760688018
-
-# Setup Update 1760688018
-
-# Setup Update 1760688018
-
-# Setup Update 1760688018
-
-# Setup Update 1760688018
-
-# Setup Update 1760688018
-
-# Setup Update 1760688018
-
-# Setup Update 1760688018
-
-# Setup Update 1760688019
-
-# Setup Update 1760688019
-
-# Setup Update 1760688019
-
-# Setup Update 1760688019
-
-# Setup Update 1760688019
-
-# Setup Update 1760688019
-
-# Setup Update 1760688019
-
-# Setup Update 1760688019
-
-# Setup Update 1760688019
-
-# Setup Update 1760688019
-
-# Setup Update 1760688019
-
-# Setup Update 1760688019
-
-# Setup Update 1760688019
-
-# Setup Update 1760688019
-
-# Setup Update 1760688020
-
-# Touch update: 1760688031
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
